@@ -1,0 +1,302 @@
+body {
+  font-family: "Sawarabi Mincho", serif;
+  margin: 0;
+  padding: 0;
+}
+h1{
+  font-family: "Sawarabi Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+ color: #000000;
+}
+h2{
+  font-family: "Sawarabi Mincho", serif;
+}
+
+.deskripsi_judul{
+  color: #000000;
+  font-family: "Sawarabi Mincho", serif;
+}
+
+
+.jumbotron {
+  text-align: justify;
+  height: 250px;
+  padding: 60px;
+  font-size: 20px;
+  background-size: cover;
+  animation: slideBackground 20s linear infinite;
+}
+
+nav {
+  display: flex;
+  align-items: center; 
+  background-color: #027532;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  font-family: "Sawarabi Mincho", serif;
+  box-shadow: 0px 4px 8px rgba(0,0,0,21);
+  height: 80px;
+}
+
+nav img {
+  height: 200px;
+  width: auto;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav li {
+  display: inline;
+  margin-left: 20px;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.logoaside{
+  width: 350px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  transition: transform 0.3s ease;
+}
+.logoaside:hover{
+  transform: scale(1.05);
+}
+
+header{
+  display: inline;
+}
+html{
+  scroll-behavior: smooth;
+}
+#content{
+  flex-grow: 5;
+}
+aside header{
+  text-align: center;
+}
+main{
+  display: flex;
+  gap: 20px;
+}
+nav a:hover{
+font-weight: bold;
+font-size: 1.2em;
+}
+@media screen and (min-width: 320px) and (max-width: 767px)
+{
+  main{
+    flex-wrap: wrap;
+  }
+  #content,
+  aside {
+      width:100%;
+
+  }
+  .card,
+  nav,
+  aside {
+    width: 100%; 
+    margin-top: 10px;
+  }
+}
+
+footer {
+  background-color: #557A46;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0px 4px 8px rgba(0,0,0,21);
+}
+
+.card {
+  box-shadow: 0px 4px 8px rgba(0,0,0,21);
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-left: 10px;
+  font-family: "Sawarabi Mincho", serif;
+  justify-content: center; 
+  align-items: center;
+}
+
+.card table {
+  width: 100%;
+}
+.card table td,
+.card table th {
+  text-align: left;
+}
+aside {
+  flex-grow: 1;
+  box-shadow: 0px 4px 8px rgba(0,0,0,21);
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: 20px;
+}
+aside table {
+  border-collapse: collapse;  
+  
+}
+aside table th, 
+aside table td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+@keyframes slideBackground {
+  0% {
+      background-image: url(img/bgjumbo.png);
+      background-position: 0% 50%;
+  }
+  25% {
+      background-image: url(img/bgjumbo2.png);
+      background-position: 25% 50%;
+  }
+  50% {
+      background-image: url(img/bgjumbo3.png);
+      background-position: 50% 50%;
+  }
+  75% {
+      background-image: url(img/bgjumbo4.jpg);
+      background-position: 75% 50%;
+  }
+  100% {
+      background-image: url(img/bgjumbo5.png);
+      background-position: 100% 50%;
+  }
+}
+.tentangproduk{
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  width: 1040px;
+}
+.tentangproduk:hover{
+  transform: scale(1.05);
+}
+.profilproduk{
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.3s ease; 
+}
+.profilproduk:hover {
+  transform: scale(1.05);
+}
+
+#background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+}
+
+.styled-table {
+  border-collapse: separate;
+  margin: 25px 0;
+  font-size: 18px;
+  text-align: left;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden; 
+}
+
+.styled-table caption {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.styled-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table thead th:first-child {
+  border-top-left-radius: 8px; 
+}
+
+.styled-table thead th:last-child {
+  border-top-right-radius: 8px; 
+}
+
+.styled-table th, .styled-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:last-of-type td:first-child {
+  border-bottom-left-radius: 8px; 
+}
+
+.styled-table tbody tr:last-of-type td:last-child {
+  border-bottom-right-radius: 8px; 
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:nth-of-type(odd) {
+  background-color: #ffffff;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.styled-table th {
+  background-color: #027532;
+  color: white;
+  font-weight: bold;
+  font-family: "Sawarabi Mincho", serif;
+}
+
+.styled-table td {
+  font-family: "Sawarabi Mincho", serif;
+}
+.dokumentasi{
+    border-radius: 20px;
+    width: 1040px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.dokumentasi:hover{
+  transform: scale(1.05);
+}
+.Varianrasa{
+  width: 1040px;
+  transition: transform 0.3s ease;
+}
+.Varianrasa:hover{
+  transform: scale(1.05);
+}
